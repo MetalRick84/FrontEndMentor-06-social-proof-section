@@ -1,3 +1,11 @@
+https://stackoverflow.com/questions/4982480/how-to-set-the-margin-or-padding-as-percentage-of-height-of-parent-container:
+vertical padding and margin in percentage are relative to the width of the parent
+top and bottom in percentage are relative to the height of the parent
+
+
+
+
+
 # Frontend Mentor - Social proof section solution
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
