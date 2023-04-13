@@ -41,6 +41,32 @@ Table of Contents
 /*                    ****** LAYOUT ******                    */
 /**************************************************************/
 
+body {
+    height: 100vh;
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "header rating-container"
+        "user-comment-container user-comment-container";
+}
+
+header {
+    background-color: lightcoral;
+    grid-area: header;
+}
+
+
+.rating-container {
+    background-color: lightgreen;
+    grid-area: rating-container;
+}
+
+.user-comment-container {
+    background-color: lightblue;
+    grid-area: user-comment-container;
+}
 
 
 /**************************************************************/
