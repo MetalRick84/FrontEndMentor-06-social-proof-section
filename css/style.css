@@ -45,7 +45,7 @@ body {
     height: 100vh;
     height: 100svh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45.83% 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "header rating-container"
@@ -61,6 +61,25 @@ header {
 .rating-container {
     background-color: lightgreen;
     grid-area: rating-container;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 51.89%;
+    position: relative; 
+    top: 37.18%;
+    left: 5.13%;
+}
+
+.rating-row {
+    display: flex;
+    width: 81.5%;
+    height: 28.5%;
+}
+
+.rating-row p {
+    right: 0;
+    bottom: 0;
 }
 
 .user-comment-container {
@@ -78,33 +97,6 @@ header {
 /***********************************************/
 
 @media only screen and (max-width: 460px) {
-
-    body {
-        grid-template-rows: 1fr;
-    }
-
-    header {
-        height: auto;
-    }
-
-    header p {
-        width: 80%;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 0 8%;
-    }
-
-    .box {
-        width: 100%;
-        align-self: center;
-    }
-
-    footer {
-        position: static;
-    }
 }
 
 /*           *** DESIGN - mobile ***           */
