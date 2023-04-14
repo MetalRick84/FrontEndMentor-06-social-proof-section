@@ -41,6 +41,9 @@ Table of Contents
 /*                    ****** LAYOUT ******                    */
 /**************************************************************/
 
+/*       *** GLOBAL ***       */
+/******************************/
+
 body {
     height: 100vh;
     height: 100svh;
@@ -52,10 +55,16 @@ body {
         "user-comment-container user-comment-container";
 }
 
+/*       *** HEADER ***       */
+/******************************/
+
 header {
     background-color: lightcoral;
     grid-area: header;
 }
+
+/*       *** RATING-SECTION ***       */
+/**************************************/
 
 
 .rating-container {
@@ -71,6 +80,10 @@ header {
     left: 5.13%;
 }
 
+.rating-container * {
+    border: 1px solid red;
+}
+
 .rating-row {
     display: flex;
     width: 81.5%;
@@ -82,7 +95,8 @@ header {
     bottom: 0;
 }
 
-
+/*       *** COMMENTS-SECTION ***       */
+/****************************************/
 
 .user-comment-container {
     background-color: lightblue;
@@ -104,6 +118,14 @@ header {
     display: flex;
 }
 
+/*       *** FOOTER ***       */
+/******************************/
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
 
 
@@ -116,7 +138,26 @@ header {
 /***********************************************/
 
 @media only screen and (max-width: 460px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .rating-container {
+        width: 100%;
+        position: static;
+    }
+
+    .user-comment-container {
+        width: 100%;
+        position: static;
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
 }
 
 /*           *** DESIGN - mobile ***           */
