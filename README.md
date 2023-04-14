@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](#)
-- [Live Site URL](#)
+- [Solution URL](https://github.com/MetalRick84/FrontEndMentor-06-social-proof-section)
+- [Live Site URL](https://metalrick84.github.io/FrontEndMentor-06-social-proof-section/)
 
 ## My process
 
