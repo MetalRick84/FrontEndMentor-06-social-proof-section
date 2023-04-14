@@ -356,8 +356,4 @@ header p {
         border-radius: 1em;
         padding: 1.8em 1.4em;
     }
-
-    body * {
-        visibility: hidden;
-    }
 }
