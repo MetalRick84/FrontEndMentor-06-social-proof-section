@@ -71,7 +71,6 @@ header {
 
 
 .rating-container {
-    background-color: lightgreen;
     grid-area: rating-container;
     display: flex;
     flex-direction: column;
@@ -81,10 +80,6 @@ header {
     position: relative; 
     top: 37.18%;
     left: 5.13%;
-}
-
-.rating-container * {
-    border: 1px solid red;
 }
 
 .rating-row {
@@ -159,6 +154,42 @@ header p {
     font-size: 1.1em;
     color: var(--darkGrayishMagenta);
 }
+
+
+.rating-row {
+    align-items: center;
+    background-color: var(--lightGrayishMagenta);
+    border-radius: 0.6em;
+}
+
+.rating-row img,
+.rating-row p {
+    height: 1em;
+}
+
+.rating-row img:first-child {
+    margin-left: 2em;
+}
+
+.rating-row img {
+    margin-left: 0.5em;
+}
+
+.rating-row p {
+    font-weight: 700;
+    color: var(--veryDarkMagenta);
+    margin-left: 2em;
+}
+
+.report-guru {
+    margin-left: 2.5em;
+}
+
+.best-tech {
+    margin-left: 5em;
+}
+
+
 
 
 
