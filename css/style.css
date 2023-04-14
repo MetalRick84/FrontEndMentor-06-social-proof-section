@@ -236,23 +236,6 @@ header p {
     line-height: 1.5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*           *** LAYOUT - mobile ***           */
 /***********************************************/
 
@@ -262,20 +245,43 @@ header p {
         flex-direction: column;
     }
 
+    header {
+        width: 100%;
+        position: static;
+    }
+
     .rating-container {
         width: 100%;
         position: static;
+    }
+
+    .report-guru {
+        margin-left: 0;
+    }
+
+    .best-tech {
+        margin-left: 0;
     }
 
     .user-comment-container {
         width: 100%;
         position: static;
         flex-direction: column;
-        height: auto;
     }
+
+    .user-comment {
+        align-self: center;
+    }
+    
+    .user-comment:nth-child(3) {
+        align-self: center;
+    }
+
 
     footer {
         position: static;
+        margin-top: 12%;
+        margin-bottom: 3px;
     }
 }
 
@@ -283,4 +289,67 @@ header p {
 /***********************************************/
 
 @media only screen and (max-width: 460px) {
+    body {
+        background-image: 
+            url(../images/bg-pattern-top-mobile.svg),
+            url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: 
+            no-repeat,
+            no-repeat;
+        background-position: 
+            left top,
+            0% 270%;
+    }
+    
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.9em;
+        margin-top: 1.5em;
+        line-height: 0.8em;
+    }
+
+    header p {
+        font-size: 1.1em;
+        color: var(--veryDarkMagenta);
+        font-weight: 500;
+        margin-left: 1.6em;
+        margin-right: 1.6em;
+    }
+
+    .rating-container {
+        margin-top: 1em;
+        align-items: center;
+    }
+
+    .star-container {
+        display: flex;
+    }
+
+    .rating-row {
+        height: 3.3em;
+        margin-top: 1em;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 0.4em;
+    }
+
+
+    .user-comment-container {
+        margin-top: 2em;
+        height: auto;
+    }
+
+    .user-comment {
+        width: 80%;
+        margin: 1em 0;
+        border-radius: 1em;
+        padding: 1.8em 1.4em;
+    }
+
+    body * {
+        visibility: hidden;
+    }
 }
